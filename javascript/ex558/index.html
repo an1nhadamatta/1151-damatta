@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(imagens/marvels-spider-man-miles-morales_du71.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            margin-top: 350px;
+            text-align: center;
+            background-attachment: fixed;
+        }
+        main {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="entrada">
+            <h1>Calculo fatorial</h1>
+            <form action="salvar.php" method="get" onsubmit="return fatorial()">
+                <label for="num">Número: </label>
+                <input type="nunber"  name="num" id="num" min="1"
+                max="20" vulue="1">
+                <input type="submit" value="Calcular Fatorial">
+            </form>
+        </section>
+        <section id="saída">
+            <h2>Resultado</h2>
+            <p id="result">O valor do fatorial vai aparer aqui</p>
+        </section>
+    </main>
+    <script>
+        let res = document.getElementById("result")
+        function fatorial() {
+            let num = Number(document.getElementById("num").value)
+            res.innerHTML = ""
+            let cont = num 
+            let fator = 1
+            while (cont >= 1) {
+                res.innerHTML += `${cont}`
+                if (cont == 1) {
+                    res.innerHTML += "= "
+                }
+                else {
+                    res.innerHTML += "x "
+                }
+                fator = fator * cont
+                cont--
+            }
+            res.innerHTML += `${fator}`
+            return false
+        }
+    </script>
+</body>
+</html>
