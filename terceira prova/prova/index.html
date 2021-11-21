@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento carro</title>
+    <style>
+        body {
+            background-image: url(img/financiamento-de-veiculo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            background-attachment: fixed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        main {
+            max-width: 400px;
+            margin: auto;
+        }
+        section {
+            background-color: rgb(184, 255, 249);
+            padding: 8px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Faça seu Financiamento &#x1F608 </h1>
+            <form action="salvar.php" method="get" onsubmit="return sal()">
+                <label for="mod" >Modelo do carro</label>
+                <input type="text" id="mod" name="mod"> <br>
+                <label for="prec">Preço total</label>
+                <input type="number" id="prec" name="prec" min="1"> <br>
+                <label for="parc">Numero de parcelas</label>
+                <input type="number" id="parc" name="parc" min="1" max="36"> <br>
+                <input type="submit" id="but" name="but">
+                <p id="result">O resultado vai aparecer aqui</p>
+            </form>
+        </section>
+    </main>
+    <script> 
+        function sal() {
+            let mod = document.getElementById("mod").value
+            let parc = Number(document.getElementById("parc").value)
+            let prec = Number(document.getElementById("prec").value)
+            let result = document.getElementById("result")
+            let res = 0
+            let jus = 0
+            let resul = 0
+            let fin = 0
+            if (parc <= 4) {
+                res = prec / parc 
+                result.innerHTML = `O financiamento do seu ${mod} está pronto!!! O valor das parcelas ficou ${res} reais, e você não vai pagar nada de juros`
+            }
+            else if (parc > 4 && parc <= 12) {
+                jus = prec * 0.25
+                resul = prec + jus
+                fin = resul / parc
+                result.innerHTML = `O financiamento do seu ${mod} está pronto!!! O valor das parcelas ficou ${fin} reais, e você só vai pagar ${jus} reais de juros.`
+            }
+            else if (parc > 12 && parc <= 24) {
+                jus = prec * 0.6
+                resul = prec + jus
+                fin = resul / parc 
+                result.innerHTML = `O financiamento do seu ${mod} está pronto!!! O valor das parcelas ficou ${fin} reais, e você só vai pagar ${jus} reais de juros.`
+            }
+            else if (parc > 24) {
+                jus = prec * 0.8
+                resul = prec + jus
+                fin = resul / parc 
+                result.innerHTML = `O financiamento do seu ${mod} está pronto!!! O valor das parcelas ficou ${fin} reais, e você só vai pagar ${jus} reais de juros.`
+            }
+            return false
+        }
+    </script>
+</body>
+</html>
