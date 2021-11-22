@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Processamento de salários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -15,7 +16,7 @@
                 <input type="number" id="quantfunc" min="1">
                 <input type="submit" id="but" value="Clique aqui">
             </form>
-            <p>Alistagem de funcionarios e salarios vai aparecer aqui:</p> 
+            <p>Alistagem vai aparecer aqui:</p> 
             <p id="resfi">*</p>
         </section>
     </main>
@@ -48,7 +49,7 @@
                 }
                 num++
             }
-            resfi.innerHTML = `total ${soma}<br>Media ${med}`
+            resfi.innerHTML = `A quantidade de salarios cadastrados foi: ${qf} . A empresa precisara de ${soma} reais para o pagamento desses funcionarios. O maior salario foi de ${max} reais e o menor de ${min} reais. E a media de salarios foi de ${med}.`
             return false
         }
     </script>
