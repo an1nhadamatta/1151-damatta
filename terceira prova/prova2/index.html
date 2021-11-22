@@ -8,32 +8,48 @@
 </head>
 <body>
     <main>
-        <h1>Cadastre seus funcionários</h1>
-        <button onclick="atividade()">Clique aqui</button>
-        <p id="refi">Alistagem de funcionarios e salarios vai aparecer aqui</p>
-        <p id="ms">Aqui vai aparecer o maior salario</p>
+        <section>
+            <h1>Cadastre seus funcionários</h1>
+            <form action="salvar.php" method="get" onsubmit="return atividade()">
+                <label for="quantfunc" >Coloque quantos funcionarios você quer cadastrar </label>
+                <input type="number" id="quantfunc" min="1">
+                <input type="submit" id="but" value="Clique aqui">
+            </form>
+            <p>Alistagem de funcionarios e salarios vai aparecer aqui:</p> 
+            <p id="resfi">*</p>
+        </section>
     </main>
     <script>
-        let funcs = new Array()
-        let sals = new Array()
-        let refi = document.getElementById("refi")
-        function atividade(){
-            let func
-            let sal
-            let fin 
-            do {
-                func = prompt("Digite o nome do funcionário")
-                sal = Number(prompt("Digite o salario do funcionário"))
-                funcs.push(func)
-                sals.push(sal)
-                fin = confirm("Quer colocar mais funcionários?")
-            } while(fin == true)
-           refi.innerHTML = ""
-           let end = 0 
-           while (end < funcs.length) {
-               refi.innerHTML += `Os funcionarios cadastrados foram: ${funcs [end] } e tem os seguintes salarios: ${sals[end] }`
-               end++
-           }
+        let resfi = document.getElementById("resfi")
+        function atividade() {
+            let qf = Number(document.getElementById("quantfunc").value)
+            let num = 1
+            let soma = 0
+            let med = 0
+            let min = 0
+            let max = 0 
+            let sal = 0
+            while (num <= qf) {
+                sal = Number(prompt("Coloque o salario do funcionario"))
+                soma += sal
+                med = soma / qf
+
+                if (num == 1) {
+                    max = sal
+                    min = sal
+                }
+                else {
+                    if (sal > max) {
+                        max = sal
+                    }
+                    else if (sal < min) {
+                        min = sal 
+                    }
+                }
+                num++
+            }
+            resfi.innerHTML = `total ${soma}<br>Media ${med}`
+            return false
         }
     </script>
 </body>
