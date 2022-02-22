@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1> <output id="titulo">Legenda da primeira imagem</output> </h1>
+    
+    <!-- ******************************** Miniaturas-->
+    <div class="miniaturas">
+        <div class="imagem">
+            <img src="img/capitao.jpg" alt="" onmouseover="trocar('img/capitao.jpg','CAPITÃO AMERICA', 'Capitão América é um super-herói de histórias em quadrinhos americanos publicado pela Marvel Comics. Criado por Joe Simon e Jack Kirby, o primeiro personagem apareceu em Captain America Comics # 1 da Timely Comics, antecessora da Marvel Comics')">
+        </div>
+        <div class="imagem">
+            <img src="img/gaviao.jpg" alt="" onmouseover="trocar('img/gaviao.jpg','GAVIÃO ARQUEIRO', 'Gavião Arqueiro alter-ego de Clint Barton, é um personagem de quadrinhos americanos da Marvel Comics. Criado por Stan Lee e Don Heck, o herói fez sua primeira aparição em Tales of Suspense #57 antes de se juntar aos Vingadores em Avengers #16. Desde então, Barton tem sido membro proeminente da equipe.')">
+        </div>
+        <div class="imagem">
+            <img src="img/homem_ferro.jpg" alt="" onmouseover="trocar('img/homem_ferro.jpg','HOMEM DE FERRO', 'O Homem de Ferro é um personagem dos quadrinhos publicados pela Marvel Comics. Sua verdadeira identidade é o empresário e bilionário Tony Stark, que usa armaduras de alta tecnologia no combate ao crime. Foi criado em 1963 pelo escritor Stan Lee, o roteirista Larry Lieber e os desenhistas Jack Kirby e Don Heck.')">
+        </div>
+        <div class="imagem">
+            <img src="img/hulk.jpg" alt="" onmouseover="trocar('img/hulk.jpg','HULK' , 'O Hulk, por vezes referido como O Incrível Hulk, é um personagem de quadrinhos/banda desenhada do gênero super-herói, propriedade da Marvel Comics, editora pela qual as histórias do personagem são publicadas desde sua criação, na década de 1960.')">
+        </div>
+        <div class="imagem">
+            <img src="img/thor.jpg" alt="" onmouseover="trocar('img/thor.jpg','THOR', 'O super-herói Thor estreou na antologia de ficção científica fantasia Journey into Mystery #83 (agosto de 1962), criada por Stan Lee, Larry Lieber e Jack Kirby.[2] Usar Thor em uma história em quadrinhos de super-heróis não foi uma novidade, a Fox Feature Syndicate publicou uma versão em 1940,[3] a própria Marvel (quando ainda se chamava Atlas) teve a sua versão publicada em Venus #12-13 (fevereiro-abril de 1951).[4] Ainda na década de 50, Jack Kirby havia criado uma versão de Thor para a DC Comics.[5]')">
+        </div>
+        <div class="imagem">
+            <img src="img/viuva.jpg" alt="" onmouseover="trocar('img/viuva.jpg', 'VIUVA NEGRA','Criada por Stan Lee (edição), Don Rico (roteiro) e Don Heck (desenhos), a personagem apareceu pela primeira vez em Tales of Suspense #52 (abril de 1964). A personagem foi introduzida pela primeira vez como uma espiã russa, antagonista do super-herói Homem de Ferro. Mais tarde, ela fugiu para os Estados Unidos, tornando-se uma agente da S.H.I.E.L.D. e membro da equipe de super-heróis Vingadores.')">
+        </div>
+    </div>
+
+    <!-- ************************* Imagem Principal -->
+    <div class="principal">
+        <img src="img/capitao.jpg" id="imagem_principal">
+    </div>
+    
+    <!-- ********************* Lengenda das imagens -->
+    <div class="legenda">
+        <output id="legenda"> </output>
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
