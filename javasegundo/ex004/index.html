@@ -6,22 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" 
+        href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap">">
+
 </head>
 <body>
-    <header>
-        <h3>Heroi</h3>
-        <p>A jornada para se tornar o numero um</p>
-    </header>
-    <nav>
-            
-    </nav>
-    <section>
-
-    </section>
-    <footer>
-
-    </footer>
-    
+    <div id="pag">
+        <header>
+            <h3>Heroi</h3>
+            <p>A jornada para se tornar o numero um</p>
+        </header>
+        <nav>
+        
+        </nav>
+        <section>
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <div id="popup">
+        <div id="fechar" onclick="fechar()">X</div>
+        <div id="quadro">
+            <h2>Identifique-se</h2>
+            <form name="form" method="post">
+                <input type="text" id="login" placeholder="login">
+                <input type="password" id="senha" placeholder="senha">
+                <input type="button" value="ok" onclick="oi()">
+                <p id="msg">Acesso Negado. Usuario ou senha invalido</p>
+                <a href="#" >Não possuo cadastro</a>
+            </form>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

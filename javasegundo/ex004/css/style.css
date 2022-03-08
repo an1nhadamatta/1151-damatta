@@ -1,6 +1,95 @@
 body{
     margin:0em ;
     background-image: url(../imgs/fund.png);
+    background-color: aliceblue;
     background-size: 100% 100%;
     background-attachment: fixed;
+}
+#pag{
+    width: 1000px;
+    margin: auto;
+    color: black;
+    background-color: antiquewhite;
+}
+header {
+    background-color: coral;
+    background-image: url(../imgs/oioio.jpg);
+    background-size: 100% 100%;
+    color: rgb(0, 0, 0);
+    height: 13em;
+    max-width: 100%;
+    padding: 2em;
+    text-align: right;
+}
+header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+header p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+nav{
+    background-color: brown;
+    color: black;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 55em;
+}
+footer{
+    background-color: blue;
+    color: black;
+    min-height: 3em;
+    max-height: 100%;
+    padding: 1em;
+}
+section{
+    background-color: aqua;
+    color: gold;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 55em;
+}
+#popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+#fechar{
+    position: absolute;
+    right: 80px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    color: azure;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#quadro{
+    width: 40%;
+    margin: 15% auto;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 5%;
+    border-radius: 15px;
+}
+#popup input{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+#quadro a{
+    text-decoration: none;
+}
+#quadro a:hover{
+    text-decoration: underline;
+}
+#msg{
+    color: brown;
+    display: none;
 }
