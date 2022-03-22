@@ -13,3 +13,7 @@ function oi(){
     }
 
 }
+function trocar(caminho,titulo){
+    document.getElementById("imagem_principal").src=caminho;
+    document.getElementById("titulo").value=titulo;
+}

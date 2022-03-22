@@ -15,7 +15,7 @@ header {
     background-color: coral;
     background-image: url(../imgs/oioio.jpg);
     background-size: 100% 100%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 13em;
     max-width: 100%;
     padding: 2em;
@@ -24,32 +24,34 @@ header {
 header h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 header p{
-    color: black;
+    color: rgb(253, 253, 253);
     font-weight: bold;
     font-size: 1.5em;
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 nav{
-    background-color: brown;
-    color: black;
+    background-color: rgb(255, 79, 79);
+    color: gold;
     padding: 1em;
     max-width: 100%;
-    min-height: 55em;
+    min-height: 5em;
 }
 footer{
-    background-color: blue;
-    color: black;
+    background-color: #ff4141;
+    color: gold;
     min-height: 3em;
     max-height: 100%;
     padding: 1em;
 }
 section{
-    background-color: aqua;
+    background-color: brown;
     color: gold;
     padding: 1em;
     max-width: 100%;
-    min-height: 55em;
+    min-height: 100em;
 }
 #popup{
     position: fixed;
@@ -74,7 +76,7 @@ section{
     width: 40%;
     margin: 15% auto;
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(245, 245, 245);
     padding: 5%;
     border-radius: 15px;
 }
@@ -92,4 +94,68 @@ section{
 #msg{
     color: brown;
     display: none;
+}
+ul li{
+    float: left;
+    width: 15%;
+    background-color: #f1f1f1;
+    margin-left: 1em;
+    text-align:center ;
+    list-style: none;
+}
+ul li:hover{
+    background-color: #cecece;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li a:hover{
+    color: rgb(197, 172, 31);
+}
+.img1{
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}
+.p1{
+    float: right;
+    width: 40%;
+    font-size: 1.5em;
+}
+.img2{
+    padding: 1em;
+    width: 50%;
+    margin-left: 20%;
+
+}
+
+img{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+#pf{
+    font-size: 2em;
+}
+.miniaturas, .principal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.imagens{
+    width: 16.66%;
+    float: left;
+}
+.text{
+    float: left;
+    width: 40%;
+    margin-left: 4em;
+    font-size: 1.2em;
 }
