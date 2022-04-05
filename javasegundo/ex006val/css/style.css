@@ -1,0 +1,50 @@
+body{
+    background-color: brown;
+    color: brown;
+}
+main{
+    width: 70%;
+    margin: 5% auto;
+    background-color: white;
+    height: auto;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #000 ;
+}
+#orçamento{
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+}
+#orçamento input, #orçamento select,{
+    width: 100%;
+    padding: 0.5%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 110%;
+    color: rgb(9, 1, 48);
+    border-radius: 10px;
+}
+#orçamento input[type=radio]{
+    width: 20px;
+}
+label{
+    font-size: 110%;
+    margin: 1% 0%;
+}
+fieldset{
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5px solid #999;
+    padding: 5px;
+}
+legend{
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: darkred;
+    color: beige;
+    
+}
