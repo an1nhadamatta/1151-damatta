@@ -1,0 +1,83 @@
+body{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    color: rgb(100, 0, 0);
+    background-color: rgb(243, 243, 243);
+}
+
+#conteudo{
+    width: 70%;   
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+}
+#header{
+    background-color: #6e181b;
+    height: 3.5em;
+    width: 70%;
+}
+.imgl{
+    float: left;
+    margin: 0.5em 0 0 100px;
+    padding-right: 420px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 1.2em;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #ec8768;
+}
+
+nav a{
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    transition: color 0.5s ease;
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+}
+h3{
+    font-size: 1em;
+
+}
+.image{
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#titulo{
+    margin-top: 20px;
+}
+
+
+
+#cart{
+    font-size: 1.5em;
+}
+#saida{
+    font-family: cursive;
+    font-size: 1.5em;
+}
+#fin{
+    text-align: center;
+}
